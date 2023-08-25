@@ -1,0 +1,11 @@
+@import url("@fontsource/montserrat");
+
+* {
+  padding: 0;
+  margin: 0;
+  /* background-color: black;
+  color: white !important; */
+}
+.mainapp {
+  min-height: 100vh;
+}

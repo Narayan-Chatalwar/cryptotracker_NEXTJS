@@ -1,0 +1,20 @@
+.container {
+  border: 1px solid red;
+
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  padding: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    margin-top: 0;
+    padding: 20px;
+    padding-top: 0;
+  }
+}

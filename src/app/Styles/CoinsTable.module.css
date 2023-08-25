@@ -1,0 +1,12 @@
+.row {
+  background-color: #16171a;
+  cursor: pointer;
+  font-family: "Montserrat";
+}
+.row:hover {
+  background-color: #131111;
+}
+
+.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root {
+  color: gold !important;
+}
