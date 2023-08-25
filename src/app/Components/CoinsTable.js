@@ -48,7 +48,8 @@ const CoinsTable = () => {
 
   useEffect(() => {
     fetchCoins();
-  }, [currency, page]);
+  }, [currency]);
+  console.log(page);
 
   const handleSearch = () => {
     return coins.filter(
@@ -56,6 +57,9 @@ const CoinsTable = () => {
         coin.name.toLowerCase().includes(search) ||
         coin.symbol.toLowerCase().includes(search)
     );
+  };
+  const handlePageChange = (event, newPage) => {
+    setPage(newPage);
   };
 
   return (
@@ -184,7 +188,7 @@ const CoinsTable = () => {
             }}
             className={styles.pagination}
             count={(handleSearch()?.length / 10).toFixed(0)}
-            onChange={(e) => setPage(e.target.value)}
+            onChange={handlePageChange}
           />
         </Container>
       </ThemeProvider>
